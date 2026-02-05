@@ -13,14 +13,20 @@ github.com/SardineMilk/f27wd-coursework -> Fork
 
 ### Clone github repository to local repository
 git clone git@github.com:YourName/f27wd-coursework.git
+
+### Add the repository as an upstream so you can fetch new changes
+git remote add upstream git@github.com:SardineMilk/f27wd-coursework.git
+
 <br/><br/>
 ## Daily Workflow
 ### Update local main branch
 git checkout main
 
-git fetch upstream
+#### Get changes from upstream (SardineMilk) repo
+git pull upstream main
 
-git pull origin main
+#### Update your local repo with any changes
+git push origin main
 
 ### Create a new branch - EVERY task/feature
 git checkout -b task-branch-name
