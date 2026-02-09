@@ -12,7 +12,7 @@
     padding: 20px;
     margin: 20px;
 
-    /*use flex to stack the fields nicely*/
+    /*use flex to stack the fields nicely, like most car leasing websites*/
     display: flex;
     flex-direction: column;
     gap: 15px;
