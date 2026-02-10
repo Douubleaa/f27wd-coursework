@@ -7,7 +7,7 @@ const mockArray = [
     "year": 2018,
     "seats": 5,
     "price": 21000,
-    "imgURL": 
+    "imgURL": "lings-cars/assets/images/cars/Corolla.jpeg"
   },
     {
     "type": "Car",
