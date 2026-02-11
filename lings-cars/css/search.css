@@ -59,4 +59,13 @@
 .search-control-field select:focus {
     border-color: var(--color-primary);
     box-shadow: 0 0 0 3px rgba(218, 21, 126, 0.1);
+    
+}
+
+.search-results-class p {
+    /* this is for the text inside of the search result boxes*/
+}
+.search-results-class img {
+    /* this is for the image*/
+    align-items: right;
 }

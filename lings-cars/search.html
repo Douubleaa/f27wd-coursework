@@ -13,14 +13,14 @@
 
 <body>
     <div id="navbar-container"></div>
-    <script src="js/navbar.js"></script>
+    <script src="js/navbar.js" defer ></script>
 
     <div class="search-control-box">
         <label class="search-control-field">
             Sort By:
             <select id="search-sort-field">
                 <option value="price">Price</option>
-                <option value="price">Year</option>
+                <option value="year">Year</option>
             </select>
         </label>
 
@@ -39,12 +39,13 @@
 
         <label class="search-control-field">
             Model:
-            <input type="text" id="search-make-field" >
+            <input type="text" id="search-model-field" >
         </label>
 
         <label class="search-control-field">
             Body Style:
             <select id="search-style-field">
+                <option value="all">All Options</option>
                 <option value="activeTour">Active Tourer</option>
                 <option value="convertible">Convertible</option>
                 <option value="coupe">Coupe</option>
@@ -61,6 +62,11 @@
         </label>
 
     </div> 
+
+    <div id="search-results" class="search-results-class">
+        
+    </div>
+    <script type="module" src="js/search.js" defer></script>
 
 
 </body>
