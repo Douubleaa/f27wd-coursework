@@ -121,5 +121,51 @@ const mockArray = [
     "imgURL": "./assets/images/cars/proace-standard.jpeg",
       //There was no verso image on the site, hence the proace standard was used
   },
+    {
+    "type": "Car",
+    "brand": "Toyota",
+    "model": "Corrola",
+    "bodystyle": "sedan",
+    "year": 2018,
+    "seats": 5,
+    "price": 1000,
+    "imgURL": "./assets/images/cars/Corolla.jpeg",
+    'leaseDuration': 24,
+  },
+    {
+    "type": "Car",
+    "brand": "Honda",
+    "model": "Civic",
+    "bodystyle": "hatchback",
+    "year": 2019,
+    "seats": 5,
+    "price": 900,
+    "imgURL": "./assets/images/cars/civic.jpeg",
+    'leaseDuration': 12,
+  },
+    {
+    "type": "Van",
+    "brand": "Renault",
+    "model": "Trafic",
+    "bodystyle": "cargo van",
+    "year": 2020,
+    "seats": 3,
+    "price": 1300,
+    "imgURL": "./assets/images/cars/trafic.jpeg",
+    'leaseDuration': 12,
+  },
+    {
+    "type": "Van",
+    "brand": "Volkswagen",
+    "model": "Transporter T6",
+    "bodystyle": "panel van",
+    "year": 2017,
+    "seats": 3,
+    "price": 1100,
+    "imgURL": "./assets/images/cars/vw-transporter.jpeg",
+    'leaseDuration': 36,
+  },
+  //leasing vehicles
 ]
+
 export {mockArray};
