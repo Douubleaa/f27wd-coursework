@@ -8,6 +8,7 @@ const mockArray = [
     "seats": 5,
     "price": 21000,
     "imgURL": "./assets/images/cars/Corolla.jpeg",
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -18,6 +19,7 @@ const mockArray = [
     "seats": 5,
     "price": 19100,
     "imgURL": "./assets/images/cars/civic.jpeg",
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -28,6 +30,7 @@ const mockArray = [
     "seats": 5,
     "price": 19500,
     "imgURL": "./assets/images/cars/3-series.jpeg",
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -38,6 +41,7 @@ const mockArray = [
     "seats": 5,
     "price": 21000,
     "imgURL": "./assets/images/cars/audi-a4.jpeg",
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -48,6 +52,7 @@ const mockArray = [
     "seats": 5,
     "price": 13200,
     "imgURL": "./assets/images/cars/vw-golf.jpeg",
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -58,6 +63,7 @@ const mockArray = [
     "seats": 5,
     "price": 12800,
     "imgURL": "./assets/images/cars/focus.jpeg",
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -68,6 +74,7 @@ const mockArray = [
     "seats": 3,
     "price": 26500,
     "imgURL": "./assets/images/cars/transit.jpeg",
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -78,6 +85,7 @@ const mockArray = [
     "seats": 3,
     "price": 31000,
     "imgURL": "./assets/images/about-us/superling150h.jpg",
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -88,6 +96,7 @@ const mockArray = [
     "seats": 3,
     "price": 27500,
     "imgURL": "./assets/images/cars/vw-transporter.jpeg",
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -98,6 +107,7 @@ const mockArray = [
     "seats": 3,
     "price": 22000,
     "imgURL": "./assets/images/cars/trafic.jpeg",
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -108,6 +118,7 @@ const mockArray = [
     "seats": 8,
     "price": 27000,
     "imgURL": "./assets/images/about-us/superling150h.jpg",
+    'leaseType': 'normal',
      // No image exists on the site for this vehicle, should be changed to a 404 error
   },
     {
@@ -119,7 +130,58 @@ const mockArray = [
     "seats": 9,
     "price": 29500,
     "imgURL": "./assets/images/cars/proace-standard.jpeg",
+    'leaseType': 'normal',
       //There was no verso image on the site, hence the proace standard was used
   },
+    {
+    "type": "Car",
+    "brand": "Toyota",
+    "model": "Corrola",
+    "bodystyle": "sedan",
+    "year": 2018,
+    "seats": 5,
+    "price": 1000,
+    "imgURL": "./assets/images/cars/Corolla.jpeg",
+    'leaseDuration': 24,
+    'leaseType': 'leasing',
+  },
+    {
+    "type": "Car",
+    "brand": "Honda",
+    "model": "Civic",
+    "bodystyle": "hatchback",
+    "year": 2019,
+    "seats": 5,
+    "price": 900,
+    "imgURL": "./assets/images/cars/civic.jpeg",
+    'leaseDuration': 12,
+    'leaseType': 'leasing',
+  },
+    {
+    "type": "Van",
+    "brand": "Renault",
+    "model": "Trafic",
+    "bodystyle": "cargo van",
+    "year": 2020,
+    "seats": 3,
+    "price": 1300,
+    "imgURL": "./assets/images/cars/trafic.jpeg",
+    'leaseDuration': 12,
+    'leaseType': 'leasing',
+  },
+    {
+    "type": "Van",
+    "brand": "Volkswagen",
+    "model": "Transporter T6",
+    "bodystyle": "panel van",
+    "year": 2017,
+    "seats": 3,
+    "price": 1100,
+    "imgURL": "./assets/images/cars/vw-transporter.jpeg",
+    'leaseDuration': 36,
+    'leaseType': 'leasing',
+  },
+  //leasing vehicles
 ]
+
 export {mockArray};

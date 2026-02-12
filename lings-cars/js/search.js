@@ -7,6 +7,7 @@ const sortOrderField = document.getElementById("search-sort-order");
 const makeField = document.getElementById("search-make-field");
 const modelField = document.getElementById("search-model-field");
 const styleField = document.getElementById("search-style-field");
+const leaseField = document.getElementById('search-lease-field');
 
 //initial variable set
 var sortBy = sortField.value;
@@ -14,6 +15,7 @@ var sortOrder = sortOrderField.value;
 var make = makeField.value;
 var model = modelField.value;
 var bodyStyle = styleField.value;
+var lease = leaseField.value;
 
 // listeners which check for when someone updates the box
 sortField.addEventListener("change", () => {
@@ -43,6 +45,12 @@ modelField.addEventListener("input", () => {
 styleField.addEventListener("change", () => {
   bodyStyle = styleField.value;
   console.log("Style Updated")
+  updateSearch();
+});
+
+leaseField.addEventListener("change", () => {
+  lease = leaseField.value;
+  console.log("Lease Updated")
   updateSearch();
 });
 
@@ -86,6 +94,10 @@ function updateSearch() {
         if (bodyStyle != "all" && (newSearchArray[i].bodystyle != bodyStyle)) {
             removeThis = true;
         }
+        console.log(lease);
+        if (lease != "all" && (newSearchArray[i].leaseType != lease)){
+            removeThis = true;
+        }
         if (removeThis == true) {
             newSearchArray.splice(i,1);
         }
@@ -93,6 +105,21 @@ function updateSearch() {
     //returns the array
     displayVehicles(newSearchArray);
     return newSearchArray;
+}
+//for updating the link
+function createURL (vehicleArray,id) {
+
+    //find the index 
+    for (var i = 0; i<vehicleArray.length;i++) {
+        if (vehicleArray[i].id == id) {
+            var vehicleIndex = i;
+            break;
+        }
+    }
+    //make the URL
+    var url = "./vehicle.html?";
+    url = url.concat(vehicleArray[vehicleIndex].id)
+    return url;
 }
 
 //for displaying the array
@@ -110,8 +137,7 @@ function displayVehicles(vehiclesToDisplay) {
         //this assigns the width for the entire result box
         carA.style.width = '60%';
         //this should be changed to the appropriate link by uncommenting line 121
-        carA.href = "https://en.wikipedia.org/wiki/Lockheed_S-3_Viking";
-        //carA.href = vehiclesToDisplay[i].pageLink;
+        carA.href = createURL(vehiclesToDisplay,vehiclesToDisplay[i].id);
         //make a div with its attributes
         const carDiv = document.createElement("div");
         carDiv.id = (vehiclesToDisplay[i].brand + i);
@@ -121,8 +147,6 @@ function displayVehicles(vehiclesToDisplay) {
         //image
         //I DO NOT KNOW HOW THIS FUNCTIONS, BUT IT DOES!
         const imageComponent = document.createElement('img');
-        console.log(vehiclesToDisplay[i].imgURL);
-        console.log(vehiclesToDisplay[i]);
         imageComponent.src = vehiclesToDisplay[i].imgURL;
 
         var imageDiv = document.createElement('div');
