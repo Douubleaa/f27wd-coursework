@@ -8,7 +8,7 @@ const mockArray = [
     "seats": 5,
     "price": 21000,
     "imgURL": "./assets/images/cars/Corolla.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -19,7 +19,7 @@ const mockArray = [
     "seats": 5,
     "price": 19100,
     "imgURL": "./assets/images/cars/civic.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -30,7 +30,7 @@ const mockArray = [
     "seats": 5,
     "price": 19500,
     "imgURL": "./assets/images/cars/3-series.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -41,7 +41,7 @@ const mockArray = [
     "seats": 5,
     "price": 21000,
     "imgURL": "./assets/images/cars/audi-a4.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -52,7 +52,7 @@ const mockArray = [
     "seats": 5,
     "price": 13200,
     "imgURL": "./assets/images/cars/vw-golf.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Car",
@@ -63,7 +63,7 @@ const mockArray = [
     "seats": 5,
     "price": 12800,
     "imgURL": "./assets/images/cars/focus.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -74,7 +74,7 @@ const mockArray = [
     "seats": 3,
     "price": 26500,
     "imgURL": "./assets/images/cars/transit.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -85,7 +85,7 @@ const mockArray = [
     "seats": 3,
     "price": 31000,
     "imgURL": "./assets/images/about-us/superling150h.jpg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -96,7 +96,7 @@ const mockArray = [
     "seats": 3,
     "price": 27500,
     "imgURL": "./assets/images/cars/vw-transporter.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -107,7 +107,7 @@ const mockArray = [
     "seats": 3,
     "price": 22000,
     "imgURL": "./assets/images/cars/trafic.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
   },
     {
     "type": "Van",
@@ -118,7 +118,7 @@ const mockArray = [
     "seats": 8,
     "price": 27000,
     "imgURL": "./assets/images/about-us/superling150h.jpg",
-    'leaseType': false,
+    'leaseType': 'normal',
      // No image exists on the site for this vehicle, should be changed to a 404 error
   },
     {
@@ -130,7 +130,7 @@ const mockArray = [
     "seats": 9,
     "price": 29500,
     "imgURL": "./assets/images/cars/proace-standard.jpeg",
-    'leaseType': false,
+    'leaseType': 'normal',
       //There was no verso image on the site, hence the proace standard was used
   },
     {
@@ -143,7 +143,7 @@ const mockArray = [
     "price": 1000,
     "imgURL": "./assets/images/cars/Corolla.jpeg",
     'leaseDuration': 24,
-    'leaseType': true,
+    'leaseType': 'leasing',
   },
     {
     "type": "Car",
@@ -155,7 +155,7 @@ const mockArray = [
     "price": 900,
     "imgURL": "./assets/images/cars/civic.jpeg",
     'leaseDuration': 12,
-    'leaseType': true,
+    'leaseType': 'leasing',
   },
     {
     "type": "Van",
@@ -167,7 +167,7 @@ const mockArray = [
     "price": 1300,
     "imgURL": "./assets/images/cars/trafic.jpeg",
     'leaseDuration': 12,
-    'leaseType': true,
+    'leaseType': 'leasing',
   },
     {
     "type": "Van",
@@ -179,7 +179,7 @@ const mockArray = [
     "price": 1100,
     "imgURL": "./assets/images/cars/vw-transporter.jpeg",
     'leaseDuration': 36,
-    'leaseType': true,
+    'leaseType': 'leasing',
   },
   //leasing vehicles
 ]
