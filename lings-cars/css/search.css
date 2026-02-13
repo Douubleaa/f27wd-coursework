@@ -1,11 +1,10 @@
 .search-control-box {
     /*made filter stay on left side of page*/
     position: sticky;
-    left: 10px;  /*Move on left of page*/
-    top: 20px;
+    top: 0%;
     width: 33%;
-    min-width: 280px;
-    height: 100vh;
+    overflow-y: auto;
+    
 
     background: var(--color-surface); /*border*/
     border: 2px solid var(--color-border);
@@ -66,7 +65,7 @@
     
 }
 
-.search-results-class p {
+.search-results-class p{
     /* this is for the text inside of the search result boxes*/
     align-items: left;
 }
@@ -77,9 +76,9 @@
 }
 
 
-.results-section {
+.search-results-class {
     width: 67%;
-    height: 100vh;
+    
 
     /*scrolling*/
     overflow-y: auto;
@@ -115,4 +114,10 @@
 }
 .search-results-class div {
     display: flex;
+}
+
+.page-layout {
+    display: flex;
+    /* subtract navbar height */
+    height: calc(100vh - 80px); 
 }
