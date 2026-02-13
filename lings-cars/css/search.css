@@ -90,3 +90,24 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /*autofits to screen size*/
     gap: 20px;
 }
+
+.car-card {
+    background: var(--color-secondary);
+    border-radius: 12px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 240px;
+
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+}
