@@ -4,8 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color);
+  background-color: var(--color-primary);
   padding: 15px 40px;
+  border-bottom: 8px solid #000000 
 }
 
 
@@ -17,8 +18,24 @@
 
 .navbar-links a {
   color: var(--text-color);
+  font-weight: bold;
+  transition: color 0.15s;
 }
 
 .navbar-links a:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-hover);
+}
+
+@media(max-width: 600px){
+  .navbar{
+    padding: 10px 20px;
+    background-color: aqua; /* checking if the max width works*/
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
 }
