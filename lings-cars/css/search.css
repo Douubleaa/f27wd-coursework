@@ -5,14 +5,13 @@
     /*need to figure out how to make it so when at top of page the navbar and filter dont touch*/
     left: 20px;
     top: 90px;
-    width: 33%;
-    min-width: 200px;
-    max-width: 250px;
+    
     height: auto;
     max-height: 500px;
 
     flex-shrink: 0;
-    
+    /*make width shrink for smaller screens */
+
 
     background: var(--color-primary);
     color: var(--color-text2);
@@ -26,7 +25,7 @@
 
     /*use flex to stack the fields nicely, like most car leasing websites*/
     display: flex;
-    flex: 0 0 350px;
+    flex: 0 0 33%;
     flex-direction: column;
     gap: 15px;
     box-shadow: 0 4px 6px var(--color-border);
