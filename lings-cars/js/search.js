@@ -133,7 +133,7 @@ function displayVehicles(vehiclesToDisplay) {
         
         // clickable wrapper
         const carA = document.createElement('a');
-        carA.href = car.pageLink || "#";
+        carA.href = createURL(vehiclesToDisplay,car.id) || "#";
         carA.className = "car-card";   //link to class
 
         // car image
@@ -156,82 +156,7 @@ function displayVehicles(vehiclesToDisplay) {
         carA.append(img, title, info, price);
         displayDiv.appendChild(carA);
         
-    }); {
-
-        //make an a tag so its clickable
-        const carA = document.createElement('a');
-        carA.style.display = 'block';
-
-        //this assigns the width for the entire result box
-        carA.style.width = '60%';
-        // It links to the "vehicle" page, with the id as a parameter 
-        carA.href = createURL(vehiclesToDisplay,vehiclesToDisplay[i].id);
-        //make a div with its attributes
-        const carDiv = document.createElement("div");
-        carDiv.id = (vehiclesToDisplay[i].brand + i);
-        const textBlock = document.createElement("div");
-        textBlock.style.flexDirection = 'column';
-
-        //image
-        //I DO NOT KNOW HOW THIS FUNCTIONS, BUT IT DOES!
-        const imageComponent = document.createElement('img');
-        imageComponent.src = vehiclesToDisplay[i].imgURL;
-
-        var imageDiv = document.createElement('div');
-        imageDiv.style.display = "flex";
-        imageDiv.style.flexDirection = 'row';
-        //THIS CANNOT GO ABOVE 14!
-        imageComponent.style.height = "14vw";
-        imageComponent.style.width = "20vw";
-        imageDiv.appendChild(imageComponent);
-        carDiv.appendChild(imageDiv);
-
-        //type
-        const typePara = document.createElement('p');
-        const typeText = document.createTextNode("Type: " + vehiclesToDisplay[i].type);
-        typePara.append(typeText);
-        textBlock.appendChild(typePara);
-
-        //Brand
-        const brandPara = document.createElement('p');
-        const brandText = document.createTextNode("Brand: " + vehiclesToDisplay[i].brand);
-        brandPara.append(brandText)
-        textBlock.appendChild(brandPara);
-
-        //Model
-        const modelPara = document.createElement('p');
-        const modelText = document.createTextNode("Model: " + vehiclesToDisplay[i].model);
-        modelPara.append(modelText)
-        textBlock.appendChild(modelPara);
-
-        //year
-        const yearPara = document.createElement('p');
-        const yearText = document.createTextNode("Year: " + vehiclesToDisplay[i].year);
-        yearPara.append(yearText)
-        textBlock.appendChild(yearPara);
-
-        //seats
-        const seatsPara = document.createElement('p');
-        const seatsText = document.createTextNode("Number of seats: " + vehiclesToDisplay[i].seats);
-        seatsPara.append(seatsText);
-        textBlock.appendChild(seatsPara);
-
-        //price
-        const pricePara = document.createElement('p');
-        const priceText = document.createTextNode("Price: " + vehiclesToDisplay[i].price);
-        pricePara.append(priceText);
-        textBlock.appendChild(pricePara);
-
-        //add the image
-        //lines below should be uncommented when the images are added
-
-        //lines above should be uncommented when images are added
-        carDiv.appendChild(textBlock);
-        carA.appendChild(carDiv);
-
-
-        displayDiv.appendChild(carA);
-    }
+    }); 
 }
 
 
