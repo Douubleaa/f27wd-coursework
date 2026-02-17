@@ -4,22 +4,29 @@
 
     /*need to figure out how to make it so when at top of page the navbar and filter dont touch*/
     left: 20px;
+    top: 90px;
     width: 33%;
-    min-width: 220px;
-    max-width: 400px;
-    height: 500px;
+    min-width: 200px;
+    max-width: 250px;
+    height: auto;
+    max-height: 500px;
+
     flex-shrink: 0;
     
-    order: 1; /*first colemn..*/
 
-    background: var(--color-primary); /*border*/
+    background: var(--color-primary);
+    color: var(--color-text2);
     border: 2px solid var(--color-secondary);
-    border-radius: 12px;
+    border-radius: 15px;
+
+
+
 
     padding: 10px;
 
     /*use flex to stack the fields nicely, like most car leasing websites*/
     display: flex;
+    flex: 0 0 350px;
     flex-direction: column;
     gap: 15px;
     box-shadow: 0 4px 6px var(--color-border);
@@ -88,21 +95,21 @@
 .search-results-class {
     flex: 1 1 auto;
     
-    order: 2; /*move box to second colemn..*/
     /*scrolling*/
     overflow-y: auto;
     min-width: 0;
     overflow: auto;;
     padding: 100px 20px 20px 20px;
-
-
-    background: var(--color-border);
-
     
     display: grid;
     /*autofits to screen size*/
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
     gap: 20px;
+  
+    /*move right side over so the image behind filter passes the right side of filter*/
+    margin-left: 20px;
+
+    background-color: var(--color-border);
 }
 
 .car-card {
@@ -144,7 +151,16 @@ main {
     /* -navbar height */
     height: calc(100vh - 80px);
     gap: 10px;
-    background: var(--color-border);
+    
+
+     /*set background to purple-backgroud.jpg and ensure it would fit to different screen sizes*/
+    background: url('../assets/images/purple-background.jpg');
+    background-repeat: repeat-y;
+    background-size: auto auto;
+
+    background-color: var(--color-border);
+
+
 }
 
 .page-layout {
